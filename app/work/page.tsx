@@ -14,7 +14,7 @@ const Work = () => {
         </p>
       </div>
 
-      <div className='mt-5 grid md:grid-cols-2 lg:grid-cols-3'>
+      <div className='mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-5'>
         {projects.map((project) =>
           <BlogPostCard key={project.id} project={project} /> 
         )}
