@@ -7,12 +7,12 @@ const Footer = () => {
   return (
     <footer className="rounded-lg shadow dark:bg-gray-900 m-4">
       <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8 lg:px-12">
-        <div className="sm:flex sm:items-center sm:justify-between">
-          <a href="" className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+        <div className="md:flex md:items-center md:justify-between">
+          <a href="" className="flex items-center sm:mb-0 space-x-3 rtl:space-x-reverse">
             <img src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="Company Logo" />
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">The Website Company</span>
           </a>
-          <div className='flex items-center mb-4 sm:mb-0'>
+          <div className='flex items-center py-5 sm:mb-0'>
             <a
               href=""
               target="_blank"
@@ -42,9 +42,9 @@ const Footer = () => {
             <li>
               <a href="#" className="hover:underline me-4 md:me-6">Privacy Policy</a>
             </li>
-            <li>
+            {/* <li>
               <a href="#" className="hover:underline">Contact</a>
-            </li>
+            </li> */}
           </ul>
         </div>
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />

@@ -62,9 +62,12 @@ const Navbar = () => {
             </DropdownMenuTrigger>
             <DropdownMenuContent>
                 <DropdownMenuLabel>
-                <Link href='/service'>Our Process</Link></DropdownMenuLabel>
+                  <Link href='/service'>Our Procedure</Link>
+                </DropdownMenuLabel>
                 <DropdownMenuSeparator />
-                <DropdownMenuItem>Billing</DropdownMenuItem>
+                <DropdownMenuItem>
+                  <Link href='/packages'>Service Plans</Link>
+                </DropdownMenuItem>
             </DropdownMenuContent>
             </DropdownMenu>
             </div>

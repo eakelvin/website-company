@@ -4,9 +4,6 @@ import Image from "next/image";
 import { AspectRatio } from "@/components/ui/aspect-ratio"
 import CardComp from "@/components/Card";
 import { Button } from "@/components/ui/button";
-import { ArrowBigDownIcon, ArrowBigUpIcon, Mail } from "lucide-react";
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuRadioGroup, DropdownMenuRadioItem, DropdownMenuSeparator, DropdownMenuTrigger,} from "@/components/ui/dropdown-menu"
-import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue, } from "@/components/ui/select"
 import Connect from "@/components/ContactForm";
 import AccordionComp from "@/components/AccordionComp";
 import Link from "next/link";
@@ -17,11 +14,11 @@ export default function Home() {
   
   return (
     <main>
-    <div className="mt-48 mb-48 p-4 px-12">
-      <div className="text-center items-center">
+    <div className="mt-32 p-4 px-12">
+      <div className="h-96 bg-gradient-to-r from-cyan-500 to-blue-500 text-center items-center p-12 py-auto">
         {/* <h1 className="text-7xl font-bold mb-5">Your Vision, Our Design: Creating Web Wonders Together</h1> */}
-        <h1 className="text-5xl md:text-7xl font-bold mb-5">Your Dream Website <br /> Starts Here</h1>
-        <p className="font-semibold text-sm md:text-md">
+        <h1 className="mt-10 text-3xl md:text-7xl font-bold mb-5 dark:text-black">Your Dream Website <br /> Starts Here</h1>
+        <p className="font-semibold text-sm md:text-md dark:text-black">
           The Website Company is dedicated to crafting visually stunning and functional websites that capture the essence of your brand.
         </p>
       </div>
@@ -35,8 +32,8 @@ export default function Home() {
                 </p>
             </div>
             <div className="grid grid-cols-2 gap-4 mt-8">
-                <img className="w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png" alt="office content 1" />
-                <img className="mt-4 w-full lg:mt-10 rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-1.png" alt="office content 2" />
+              <img className="mt-4 w-full h-full lg:mt-10 rounded-lg" src="web1.jpg" alt="Website Design" />
+              <img className="w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png" alt="office content 1" />             
             </div>
         </div>
       </section>
@@ -50,9 +47,9 @@ export default function Home() {
                 From concept to launch, we're committed to delivering high-quality, user-friendly mobile solutions that meet your unique business needs and objectives
                 </p>
             </div>
-            <div className="grid grid-cols-2 gap-4 mt-8">
-                <img className="w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png" alt="office content 1" />
-                <img className="mt-4 w-full lg:mt-10 rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-1.png" alt="office content 2" />
+            <div className="grid grid-cols-2 gap-4 mt-3">
+                <img className="w-full h-full rounded-lg" src="/mob1.jpg" alt="office content 1" />
+                <img className="mt-4 w-full h-full lg:mt-10 rounded-lg" src="/and.jpg" alt="office content 2" />
             </div>
         </div>
       </section>
@@ -67,21 +64,18 @@ export default function Home() {
                 </p>
             </div>
             <div className="grid grid-cols-2 gap-4 mt-8">
-                <img className="w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png" alt="office content 1" />
-                <img className="mt-4 w-full lg:mt-10 rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-1.png" alt="office content 2" />
+                <img className="w-full rounded-lg" src="/ui.jpg" alt="office content 1" />
+                <img className="mt-4 w-full h-full lg:mt-10 rounded-lg" src="/ux.jpg" alt="office content 2" />
             </div>
         </div>
       </section>
 
       <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
-        <div className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+        <div className="font-light text-gray-500 sm:text-lg dark:text-gray-400 text-center md:text-left">
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Already have some questions?</h2>
           <p className="mb-4">
             We're eager to address your questions as they often lead to tailored digital solutions that perfectly meet your business needs.
           </p>
-          {/* <Button>
-            <Mail className="mr-2 h-4 w-4" /> Contact Us
-          </Button> */}
           <Button>
             <Link className='flex items-center' href='/contact'>
               <MdCastConnected size={30} />
@@ -89,7 +83,7 @@ export default function Home() {
             </Link>
           </Button>
         </div>
-        <div className="grid grid-cols-1 mt-5 md:mt-0">
+        <div className="grid grid-cols-1 mt-5 md:mt-2">
           <AccordionComp />    
         </div>
       </div>
