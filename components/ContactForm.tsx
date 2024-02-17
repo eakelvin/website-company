@@ -7,6 +7,9 @@ import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, For
 import axios from 'axios'
 import { ToastAction } from '@radix-ui/react-toast'
 
+const testURL = "http://localhost:8000"
+const baseURL = "https://company-website-09c3.onrender.com"
+
 interface ContactFormProps{
     showHeader?: boolean,
 }
@@ -25,7 +28,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ showHeader = true }) => {
 
     const onSubmit = async (data: FormData) => {
         try {
-            const response = await axios.post('http://localhost:8000/api/messages/create', data)
+            const response = await axios.post(`${baseURL}/api/messages/create`, data)
             console.log(response.data);
             toast({ description: "Your message has been sent.",})
             reset()
