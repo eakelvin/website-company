@@ -11,12 +11,6 @@
             "title" : "Personal Projects",
             "description": "Playlist of Projects",
             "logo": "/ea.png"
-        },
-        {
-            "id" : 3,
-            "title" : "",
-            "description": "",
-            "logo": ""
         }
     ]
 }

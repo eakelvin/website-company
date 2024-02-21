@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className="bg-[#150E28] text-white">
         <ThemeProvider
             attribute="class"
             defaultTheme="system"
@@ -28,7 +28,7 @@ export default function RootLayout({
             disableTransitionOnChange
         >
           <Navbar />
-          <main>{children}</main>
+          {children}
           <Footer />
           <Toaster />
         </ThemeProvider>

@@ -32,10 +32,12 @@ const Navbar = () => {
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 md:px-3 lg:px-12">
         <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="Company Logo" />
-          <span className="self-center sm:text-sm xl:text-2xl font-bold whitespace-nowrap dark:text-white">The Website Company</span>
+          <span className="self-center sm:text-sm xl:text-2xl font-bold whitespace-nowrap dark:text-white">
+            The<span className='text-lime-400'>Website</span>Company
+          </span>
         </Link>
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-          <ModeToggle />
+          {/* <ModeToggle /> */}
           <button
             onClick={toggleMenu}
             data-collapse-toggle="navbar-sticky"
