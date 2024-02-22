@@ -6,6 +6,7 @@ import { useForm } from 'react-hook-form'
 import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage,} from "@/components/ui/form"
 import axios from 'axios'
 import { ToastAction } from '@radix-ui/react-toast'
+import { Loader2 } from 'lucide-react'
 
 const testURL = "http://localhost:8000"
 const baseURL = "https://company-website-09c3.onrender.com"
@@ -25,12 +26,15 @@ interface FormData {
 const ContactForm: React.FC<ContactFormProps> = ({ showHeader = true }) => {
     const { toast } = useToast()
     const { register, handleSubmit, reset } = useForm<FormData>()
+    const [loading, setLoading] = useState(false)
 
     const onSubmit = async (data: FormData) => {
+        setLoading(true)
         try {
             const response = await axios.post(`${baseURL}/api/messages/create`, data)
             console.log(response.data);
             toast({ description: "Your message has been sent.",})
+            setLoading(false)
             reset()
         } catch (error) {
             console.log(error);
@@ -51,7 +55,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ showHeader = true }) => {
                 <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center">
                     React Out
                 </h2>
-                <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
+                <p className="mb-8 lg:mb-16 font-light text-center sm:text-xl">
                     Got a technical issue? Want to send feedback about a feature? Need details about our Business plan? Let us know.
                 </p>
             </div>
@@ -59,7 +63,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ showHeader = true }) => {
             
                 <form onSubmit={handleSubmit(onSubmit)} className="space-y-8">
                 <div>
-                    <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your Name</label>
+                    <label htmlFor="name" className="block mb-2 text-sm font-medium">Your Name</label>
                     <input 
                         type="text" 
                         id="name"
@@ -70,7 +74,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ showHeader = true }) => {
                     />
                 </div>
                 <div>
-                    <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
+                    <label htmlFor="email" className="block mb-2 text-sm font-medium">Your email</label>
                     <input
                         type="email" 
                         id="email"
@@ -81,7 +85,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ showHeader = true }) => {
                     />
                 </div>
                 <div>
-                    <label htmlFor="phone" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your Number</label>
+                    <label htmlFor="phone" className="block mb-2 text-sm font-medium">Your Number</label>
                     <input 
                         type="tel" 
                         id="phone"
@@ -92,7 +96,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ showHeader = true }) => {
                     />
                 </div>
                 <div>
-                    <label htmlFor="subject" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
+                    <label htmlFor="subject" className="block mb-2 text-sm font-medium ">Subject</label>
                     <input 
                         type="text" 
                         id="subject"
@@ -103,7 +107,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ showHeader = true }) => {
                     />
                 </div>
                 <div className="sm:col-span-2">
-                    <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
+                    <label htmlFor="message" className="block mb-2 text-sm font-medium">Your message</label>
                     <textarea
                         required
                         {...register('message', { required: true })}  
@@ -114,7 +118,16 @@ const ContactForm: React.FC<ContactFormProps> = ({ showHeader = true }) => {
                     </textarea>
                 </div>
                 <div className='flex justify-center'>
-                    <Button className='bg-white text-black' type='submit'>Send Message</Button>
+                    <Button 
+                        className='bg-white text-black' 
+                        type='submit'>
+                            {loading ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : 'Send Message' }                         
+                    </Button>
+
+                    {/* <Button disabled>
+                    
+                    Please wait
+                    </Button> */}
                 </div>
             </form>
            

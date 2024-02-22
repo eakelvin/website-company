@@ -16,10 +16,12 @@ const thought = require('../assets/images/thought.png')
 import data from '../data.json'
 import BlogPostCard from "@/components/BlogPostCard";
 import { CarouselPlugin } from "@/components/Carousel";
+import style from '../assets/styles/home.module.css'
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false)
   const { projects } = data
+  
   
   return (
     <div className="mt-24 p-4 px-12">
@@ -32,8 +34,16 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="mx-6 sm:mx-12 mt-5">
-        <Sparkles />
+      
+
+      <div className="flex flex-row justify-between mx-6 sm:mx-12 mt-5">
+        <div>
+          <Sparkles />
+        </div>
+
+        <div className={style.spinner}>
+          <div className={style.spinner1}></div>
+        </div>
       </div>
       
       {/* <div className="grid grid-cols-1 lg:grid-cols-[270px_1fr] px-5 sm:mx-12">
