@@ -1,0 +1,21 @@
+#ellipse1 {
+  position: absolute;
+  width: 500px;
+  height: 300px;
+  left: -227px;
+  top: 100px;
+  /* background: #1893FA; */
+  background: whitesmoke;
+  filter: blur(294px);
+}
+
+#ellipse2 {
+  position: absolute;
+  width: 400px;
+  height: 250px;
+  left: 100%;
+  top: 500px;
+  transform: translate(-100%, 0);
+  background: #1893FA;
+  filter: blur(358px);
+}

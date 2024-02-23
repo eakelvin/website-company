@@ -17,6 +17,7 @@ import data from '../data.json'
 import BlogPostCard from "@/components/BlogPostCard";
 import { CarouselPlugin } from "@/components/Carousel";
 import style from '../assets/styles/home.module.css'
+import Backdrop from "@/components/backdrop";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false)
@@ -32,11 +33,11 @@ export default function Home() {
         <div className="flex justify-end">
           <Stroke />
         </div>
-      </div>
-
-      
+      </div>   
 
       <div className="flex flex-row justify-between mx-6 sm:mx-12 mt-5">
+        <Backdrop />
+        
         <div>
           <Sparkles />
         </div>

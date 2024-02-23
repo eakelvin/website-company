@@ -18,7 +18,7 @@ const Footer = () => {
                         The <span className='text-lime-400'>Website</span> Company
                       </span>
                   </a>
-                  <p className='my-4 text-lg lg:text-nowrap'>
+                  <p className='my-4 text-lg'>
                     The Website Company is a technology innovation program
                     that aims to empower individuals and businesses to thrive 
                     in the online world.
