@@ -15,11 +15,11 @@ const Footer = () => {
                   <a href="https://flowbite.com/" className="flex items-center">
                       <img src="https://flowbite.com/docs/images/logo.svg" className="h-8 me-3" alt="FlowBite Logo" />
                       <span className="self-center sm:text-xl md:text-2xl font-extrabold whitespace-nowrap dark:text-white">
-                        The <span className='text-lime-400'>Website</span> Company
+                        EA <span className='text-lime-400'>CODES</span>
                       </span>
                   </a>
                   <p className='my-4 text-lg'>
-                    The Website Company is a technology innovation program
+                    EA CODES is a technology innovation program
                     that aims to empower individuals and businesses to thrive 
                     in the online world.
                   </p>

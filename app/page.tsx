@@ -81,7 +81,7 @@ export default function Home() {
           </div>
           <p className="">
            <span className="text-bold text-pretty text-xl text-center flex justify-center items-center">
-            The Website Company
+            EA CODES
             <FireEmoji />
             </span><br /> 
            {/* <span className="text-sm">combine</span>  */}

@@ -10,7 +10,7 @@ import { motion } from "framer-motion"
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "The Website Company",
+  title: "EA CODES",
   description: "Professional Web Design",
 };
 
