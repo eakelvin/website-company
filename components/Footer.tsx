@@ -12,8 +12,8 @@ const Footer = () => {
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
           <div className="grid grid-cols-1 sm:grid-cols-2">
               <div className="mb-6 md:mb-0">
-                  <a href="https://flowbite.com/" className="flex items-center">
-                      <img src="https://flowbite.com/docs/images/logo.svg" className="h-8 me-3" alt="FlowBite Logo" />
+                  <a href="/" className="flex items-center">
+                      <img src="/ealogo.png" className="h-8 me-3" alt="FlowBite Logo" />
                       <span className="self-center sm:text-xl md:text-2xl font-extrabold whitespace-nowrap dark:text-white">
                         EA <span className='text-lime-400'>CODES</span>
                       </span>
@@ -67,7 +67,7 @@ const Footer = () => {
           <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
           <div className="sm:flex sm:items-center sm:justify-between">
               <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
-                © 2023 <a href="" className="hover:underline">The Website Company</a>. All Rights Reserved.
+                © 2023 <a href="" className="hover:underline">EA CODES</a>. All Rights Reserved.
               </span>
               <div className="flex mt-4 sm:justify-center sm:mt-0">
                   <a href="#" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">

@@ -90,7 +90,8 @@ const Service = () => {
         <div className='items-center my-auto'>
           <h1 className='font-extrabold text-2xl mt-5'>Explore our Portfolio</h1>
           <p className='my-5'>
-            Delve into a display of our varied projects and uncover the inventive solutions we've tailored for clients spanning diverse industries. From elegant website designs to resilient mobile applications, our showcase underscores our dedication to quality and originality in every venture
+            Delve into a display of our varied projects and uncover the inventive solutions we've tailored for clients spanning diverse industries. 
+            From elegant website designs to resilient mobile applications, our showcase underscores our dedication to quality and originality in every venture
           </p>
           <Button>
             <Link className='flex items-center' href='/work'>

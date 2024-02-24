@@ -31,7 +31,7 @@ const Navbar = () => {
     <nav className="bg-blue-900 fixed w-full top-0 start-0 border-b border-gray-200 dark:border-gray-600">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 md:px-3 lg:px-12">
         <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="Company Logo" />
+          <img src="/ealogo.png" className="h-8" alt="Company Logo" />
           <span className="self-center sm:text-sm xl:text-2xl font-bold whitespace-nowrap dark:text-white">
             EA<span className='text-lime-400'>CODES</span>
           </span>
