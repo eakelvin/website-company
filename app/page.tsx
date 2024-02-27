@@ -54,7 +54,7 @@ export default function Home() {
           </div>
           <p className="">
            <span className="text-bold text-sm md:text-base lg:text-xl text-center flex items-center">
-            The Website Company
+            EA CODES
             <FireEmoji />
             </span><br /> 
            <span className=" text-lime-400 font-semibold lg:text-2xl">strategy, design & technology</span><br /> 
@@ -86,13 +86,15 @@ export default function Home() {
             </span><br /> 
            {/* <span className="text-sm">combine</span>  */}
            <span className=" text-lime-400 font-semibold lg:text-2xl">Strategy, Design & Technology</span><br /> 
-           <span className="text-sm">to craft visually stunning and functional websites 
+           <span className="text-sm font-semibold">to craft visually stunning and functional websites 
            & mobile apps that capture the essence of your brand.</span>
           </p>
           <div className="flex justify-evenly items-center">
             <Button className='bg-white text-black hover:bg-lime-300 mt-4'>
-              <MdCastConnected size={30} />
-              <span className='ml-2'>CONTACT US</span>
+              <Link className='' href='/contact'>
+                <MdCastConnected size={30} />
+                <span className='ml-2'>CONTACT US</span>
+              </Link>
             </Button>
             <Star />
           </div>
@@ -135,7 +137,7 @@ export default function Home() {
               <div className="font-light sm:text-lg">
                   <h2 className="my-4 text-4xl tracking-tight font-extrabold text-lime-400">Mobile App Development</h2>
                   <p className="mb-4">
-                  The Webiste Company also specialize in developing mobile applications. Whether you're looking to expand your digital presence with a custom iOS, Android, or cross-platform app, our experienced team is here to bring your ideas to life.
+                  EA CODES also specialize in developing mobile applications. Whether you're looking to expand your digital presence with a custom iOS, Android, or cross-platform app, our experienced team is here to bring your ideas to life.
                   From concept to launch, we're committed to delivering high-quality, user-friendly mobile solutions that meet your unique business needs and objectives
                   </p>
               </div>   
