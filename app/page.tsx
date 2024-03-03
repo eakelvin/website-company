@@ -80,7 +80,7 @@ export default function Home() {
             <Lightbulb />
           </div>
           <p className="">
-           <span className="text-bold text-pretty text-xl text-center flex justify-center items-center">
+           <span className="text-bold text-pretty text-2xl text-center flex justify-center items-center">
             EA CODES
             <FireEmoji />
             </span><br /> 
@@ -91,7 +91,7 @@ export default function Home() {
           </p>
           <div className="flex justify-evenly items-center">
             <Button className='bg-white text-black hover:bg-lime-300 mt-4'>
-              <Link className='' href='/contact'>
+              <Link className='flex items-center' href='/contact'>
                 <MdCastConnected size={30} />
                 <span className='ml-2'>CONTACT US</span>
               </Link>
