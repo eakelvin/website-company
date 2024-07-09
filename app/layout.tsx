@@ -12,6 +12,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "EA CODES",
   description: "Professional Web Design",
+  manifest: "/manifest.json"
 };
 
 export default function RootLayout({
