@@ -29,23 +29,27 @@ const Pwa = () => {
         if (prompt) {
             prompt.prompt();
 
-            // prompt.userChoice.then((choiceResult: any) => {
-            //     if (choiceResult.outcome === "accepted") {
-            //         console.log("Accepted");
-            //     } else {
-            //         console.log("Cancelled");
-            //     }
+            prompt.userChoice.then((choiceResult: any) => {
+                if (choiceResult.outcome === "accepted") {
+                    console.log("User accepted the install prompt");
+                } else {
+                    console.log("User cancelled the install prompt");
+                }
 
-            //     setPrompt(null);
-            //     setShowInstall(false);
-            // })
+                setPrompt(null);
+                setShowInstall(false);
+            })
         }
     };
 
   return (
-    <Button className='bg-white text-black hover:bg-lime-300' onClick={handleInstall}>
-        Install PWA
-    </Button>
+    <div>
+    {showInstall &&
+        <Button className='bg-white text-black hover:bg-lime-300' onClick={handleInstall}>
+            Install PWA
+        </Button>
+    }
+    </div>
   )
 }
 
