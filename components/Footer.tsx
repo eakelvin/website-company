@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import { TwitterLogoIcon, InstagramLogoIcon, LinkedInLogoIcon } from '@radix-ui/react-icons'
 import { AiFillTwitterCircle, AiFillInstagram } from 'react-icons/ai'
@@ -5,6 +6,7 @@ import { FaFacebook } from "react-icons/fa";
 import Link from 'next/link';
 import { Button } from './ui/button';
 import { MdCastConnected } from 'react-icons/md';
+import Pwa from './Pwa';
 
 const Footer = () => {
   return (
@@ -61,6 +63,9 @@ const Footer = () => {
                             <a href="#" className="hover:underline">Terms of Use</a>
                         </li>
                     </ul>
+                    <div className='mt-2'>
+                      <Pwa />
+                    </div>
                 </div>
               </div>
           </div>
